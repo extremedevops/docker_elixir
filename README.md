@@ -1,5 +1,7 @@
 # Elixir
 
+[![](https://badge.imagelayers.io/extremedevops/elixir:latest.svg)](https://imagelayers.io/?images=extremedevops/elixir:latest 'Get your own badge on imagelayers.io')
+
 Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
 Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.
 
