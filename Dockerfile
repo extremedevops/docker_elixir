@@ -1,6 +1,8 @@
 FROM extremedevops/erlang:17.5.3
 MAINTAINER Leandro David Cacciagioni <leandro.21.2008@gmail.com>
 
+ADD locales /etc/profile.d/locales.sh
+
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get update && \
   apt-get dist-upgrade -qqy --force-yes && \
