@@ -6,7 +6,8 @@ ADD locales /etc/profile.d/locales.sh
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get update && \
   apt-get dist-upgrade -qqy --force-yes && \
-  apt-get install -qqy --force-yes unzip && \
+  apt-get install -qqy --force-yes unzip locales && \
+  locale-gen C.UTF-8 && \
   mkdir -p /opt/elixir && \
   wget https://github.com/elixir-lang/elixir/releases/download/v1.0.5/Precompiled.zip -O /opt/elixir/elixir.zip && \
   cd /opt/elixir/ && unzip elixir.zip && \
